@@ -2219,9 +2219,6 @@
             color: $green;
             font-size: 24px;
         }
-        &::placeholder{
-            color: #707070;
-        }
     }
     select,
     input,
@@ -2232,6 +2229,9 @@
         height: 40px;
         background-color: #f9f9f9;
         padding: 0 18px;
+        &::placeholder{
+            color: #707070;
+        }
     }
     textarea{
         resize: none;
@@ -2314,6 +2314,177 @@
 
 }
 /* End Upload */
+
+/* Start Withdrawal */
+.withdrawal__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+.withdrawal__col {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    height: 100%;
+}
+.withdrawal__box {
+}
+.withdrawal__title {
+    @include f500;
+    padding: 16px 35px 18px;
+    font-size: 24px;
+    color: $bg;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 30px;
+}
+.withdrawal__content {
+    padding: 0 35px;
+    button{
+        margin-bottom: 50px;
+        color: #fff;
+        background-color: $green;
+        border: none;
+        padding: 15px 36px;
+        cursor: pointer;
+    }
+}
+.withdrawal__form-line {
+    margin-bottom: 25px;
+    label{
+        display: block;
+        width: 100%;
+        @include f500;
+        font-size: 16px;
+        color: $bg;
+        margin-bottom: 15px;
+        span{
+            color: $green;
+            font-size: 18px;
+        }
+    }
+    input,
+    select{
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding: 0 18px;
+        &::placeholder{
+            color: #707070;
+        }
+    }
+    .jq-file__browse {
+        position: absolute;
+        top: 5px;
+        left: 9px;
+        right: auto;
+        padding: 0 12px;
+        font-size: 12px;
+        line-height: 26px;
+        color: #444;
+        border: 1px solid #d7d7d7;
+        border-left: 1px solid #d7d7d7;
+        border-radius: 0;
+        background: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        
+    }
+    .jq-file{
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        padding: 0 18px;
+        background-color: #f9f9f9;
+    }
+    .jq-file__name{
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        border: none;
+        border-bottom-color: transparent;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+        font-size: 12px;
+        color: #707070;
+        line-height: 40px;
+        margin-left: 100px;
+    }
+    .jq-selectbox{
+        width: 100%;
+    }
+    .jq-selectbox__select{
+        width: 100%;
+        height: 40px;
+        padding: 0 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background:#f9f9f9;;
+        box-shadow: none;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 15px;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+    .jq-selectbox__trigger-arrow{
+        border: none;
+        font-size: 15px;
+        top: 0px;
+        line-height: 40px;
+        right: 20px;
+        &::before{
+            font-family: 'icomoon';
+            content: "\f0d7";   
+        }
+    }
+    .jq-selectbox__trigger{
+        border-left: none;
+    }
+}
+.withdrawal__content-items {
+    padding-bottom: 35px;
+}
+.withdrawal__content-item {
+    display: flex;
+    height: 42px;
+    align-items: center;
+    color: #444;
+    font-size: 13px;
+    &:nth-child(odd){
+        background: #f9f9f9;
+    }
+}
+.withdrawal__content-date {
+    width: 154px;
+    padding-left: 20px;
+    @include f500;
+}
+.withdrawal__content-mail {
+    width: 180px;
+    @include f500;
+}
+.withdrawal__content-price {
+    width: 70px;
+    @include f700;   
+}
+
+.withdrawal__content-status {
+    width: 88px;
+    @include f700;
+    &.withdrawal__content-paid {
+        color: $green;
+    }
+}
+
+/* End Withdrawal */
 
 
 
