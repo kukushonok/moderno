@@ -1906,8 +1906,198 @@
 }
 /* End Settings */
 
+/* Start Profile */
+.profile-settings{
+    .product-one__tabs.settings__tabs{
+        .tabs span{
+            font-family: "Roboto", sans-serif !important;
+            color: #707070;
+            font-weight: 500;
+            position: relative;
+            &.active::before{
+                color: $green;
+            }
+            &::before{
+                color: #d0d0d0;
+                font-size: 14px;
+                font-family: 'icomoon';
+                position: absolute;
+                left: 25px;
+                top: 16px;
+            }
+        }
+    }
+}
+.profile__inner{
+   display: flex;
+   margin-bottom: 30px;
+}
+.profile__aside{
+    margin-right: 30px;
+    max-width: 270px;
+    width: 100%;
+    & .footer__social-link{
+        margin-bottom: 30px;
+    }
+}
+.profile__content{
+    width: 100%;
+}
+.profile-status{
+    padding: 6px 9px 5px 30px;
+    font-size: 13px;
+    border: 1px solid #d6d6d6;
+    color: #707070;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        top: 13px;
+        left: 11px;
+    }
+}
+.profile-on{
+    &::before{
+        background-color: $green;
+    }
+}
+.profile-off{
+    &::before{
+        background-color: $red;
+    }
+}
+
+.profile__aside-btn {
+    margin-bottom: 13px;
+}
+.profile__aside-message {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    @include f500;
+    color: #fff;
+    background-color: $text;
+    padding: 18px 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        content: "\f003";
+        left: 50px;
+        top: 17px;
+    }
+}
+.profile__aside-follow {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    @include f700;
+    color: #fff;
+    background-color: $green;
+    padding: 18px 10px;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+}
+.profile__banner{
+    padding: 20px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.profile__banner-img{
+    background-image: url(../images/content/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 332px;    
+}
+.profile__items {
+    display: flex;
+    border: 1px solid #dedede;
+}
+.profile__item {
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px 17px;
+    font-size: 14px;
+    & + .profile__item{
+        border-left: 1px solid #dedede;
+    }
+}
+.profile__item-title {
+    color: $bg;
+    @include f500;
+}
+.profile__item-content {
+    color: #707070;
+    @include f500;
+    &.profile__item-sales{
+        color: $bg;
+    }
+}
+
+.personal-box{
+    background-color: #fff;
+    padding: 35px 40px 25px;
+    border: 1px solid #dedede;
+}
+.personal-box__title {
+    margin-bottom: 25px;
+    @include f700;
+    color: $bg;
+    font-size: 20px;
+}
+.personal-box__text {
+    margin-bottom: 20px;
+    p{
+        color: #707070;
+    }
+}
+.personal-box__items {
+}
+.personal-box__item {
+}
+.personal-box__item-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.personal-box__item-name {
+    font-style: italic;
+    @include f500;
+    font-size: 16px;
+    color: $bg;
+}
+.personal-box__item-number {
+    @include f700;
+    font-size: 16px;
+    color: $bg;
+}
+.personal-box__item-line {
+    background-color: #f4f4f4;
+    height: 15px;
+    border-radius: 3px;
+    margin-bottom: 23px;
+    span{
+        display: block;
+        border-radius: 3px;
+        height: 15px;    
+        background-image: url(../images/progress-bg.jpg);
+        background-repeat: repeat;
+    }
+}
 
 
+
+/* End Profile */
 
 
 
