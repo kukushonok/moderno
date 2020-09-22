@@ -492,7 +492,12 @@
 /* Starts Products */
 .product{
     padding: 110px 0;
-    background-color: $light-bg;
+    background-color: $light-bg;  
+}
+.product__wrapper,
+.product-slider__wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .product__inner-btn{
     text-align: center;
@@ -518,8 +523,13 @@
 }
 .product__inner-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-left: -30px;
     flex-wrap: wrap;
+}
+.product .product__item{
+    flex-basis: calc(25% - 30px);
+    margin-left: 30px;
 }
 .product__item{
     max-width: 442px;
@@ -948,7 +958,7 @@
     border: 1px solid #dedede;
     padding:0 32px 32px;
     margin-bottom: 30px;
-    max-width: 270px;
+    width: 270px;
 }
 .aside__title{
     border-bottom: 1px solid #dde3e8;
@@ -1152,9 +1162,10 @@
 }
 .product-page__content{
     .product__item{
-        max-width: 270px;
         background-color: #fff;
         transition: all .5s;
+        flex-basis: calc(33.333% - 30px);
+        margin-left: 30px;
     }
     .product__item-img{
         min-height: 180px;
@@ -1179,9 +1190,10 @@
 }
 .product-page__items{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-left: -30px;
 }
 .pagination__list{
     li{
@@ -1248,6 +1260,7 @@
 .product__item{
     &.list{
         max-width: 100%;
+        flex-basis: 100%;
         .product__item-img{
             width: 240px;
             float: left;
@@ -1347,7 +1360,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0;
+    padding: 16px;
 }
 .product-one__img{
     max-width: 829px;
@@ -1936,7 +1949,6 @@
         color: #707070;
     }
     .jq-selectbox__select {
-        min-width: 540px;
         width: 100%;
         height: 40px;
         padding: 0 45px 0 18px;
@@ -1979,6 +1991,9 @@
         width: 100%;
         margin: 12px 0 0;
         border-radius: 0;
+    }
+    .jq-selectbox{
+        display: block;
     }
 }
 .settings-btn{
